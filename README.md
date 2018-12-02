@@ -7,7 +7,7 @@ This is image browser-uploader by www.pcesolutions4u.com
 VERSION 1.0
 ```
 process- 
-1- change browse url from "ckeditor/plugin.js" in line 6.
+1- change browse url from "zsuploader/plugin.js" in line 6.
 2- now change $upload_folder in "ckeditor/uploader.php" in line 6.
 3- now add or change in "ckeditor/config.js"
 	config.extraPlugins = 'zsuploader';
