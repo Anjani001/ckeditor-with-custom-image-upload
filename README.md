@@ -1,8 +1,8 @@
 # ckeditor-with-custom-image-upload
 ckeditor with custom image upload feature with php
 This is image browser-uploader by www.pcesolutions4u.com
-now VERSION 1.0: 
-dated 02.12.2018
+VERSION 1.0: 
+Dated : 02.12.2018
 
 process- 
 
