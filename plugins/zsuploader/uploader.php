@@ -9,7 +9,13 @@ $thumb_width  = '150';        // width of thumbnails
 $thumb_height = '180';         // height of thumbnails
 $extensions   = array(".jpg",".jpeg",".png",".gif",".JPG",".JPEG",".PNG",".GIF"); // allowed extensions in photo gallery
 
-$server= $_SERVER['SERVER_NAME'];
+//getting the base_url
+$currentPath = $_SERVER['PHP_SELF'];
+$pathInfo = pathinfo($currentPath);
+$hostName = $_SERVER['HTTP_HOST'];
+$protocol = strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https://'?'https://':'http://';
+$server= $protocol.$hostName.$pathInfo['dirname']."/";
+
 $full_adr=$server.$upload_folder;
 $full_browse_dir=$_SERVER["DOCUMENT_ROOT"].$upload_folder;
 $_SESSION['upload_adr']=$full_browse_dir;
